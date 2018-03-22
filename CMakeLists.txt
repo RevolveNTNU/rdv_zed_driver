@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.8.7)
 
 project(zed_wrapper)
+add_definitions(-std=c++11)
 
 # if CMAKE_BUILD_TYPE is not specified, take 'Release' as default
 IF(NOT CMAKE_BUILD_TYPE)
@@ -19,7 +20,7 @@ function(checkPackage package customMessage)
     endif()
 endfunction(checkPackage)
 
-find_package(ZED 2.3)
+find_package(ZED 2.3.3)
 checkPackage("ZED" "ZED SDK not found, install it from:\n https://www.stereolabs.com/developers/")
 
 exec_program(uname ARGS -p OUTPUT_VARIABLE CMAKE_SYSTEM_NAME2)
