@@ -1,3 +1,5 @@
+# :no_entry:️ DEPRECATED :no_entry:️
+This repository is now a part of [rdv_pipeline](https://github.com/RevolveNTNU/rdv_pipeline/tree/master)
 # Stereolabs ZED Camera - ROS Integration
 
 This package lets you use the ZED stereo camera with ROS. It outputs the camera left and right images, depth map, point cloud, odometry information and supports the use of multiple ZED cameras.
